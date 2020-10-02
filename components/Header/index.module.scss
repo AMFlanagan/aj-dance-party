@@ -1,0 +1,18 @@
+@import "constants/scss/includes.scss";
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  background-color: $color-backgroundLight;
+  border-top: 1px solid $color-backgroundDark;
+  border-bottom: 1px solid $color-backgroundDark;
+  padding: 0;
+  margin: 0;
+  height: 70px;
+
+  @include media-query(small) {
+    height: 170px;
+  }
+}

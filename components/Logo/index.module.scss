@@ -1,0 +1,29 @@
+@import "constants/scss/includes.scss";
+
+.LogoContainer {
+  display: flex;
+  flex: 1;   
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  
+  @include media-query(small) {
+    padding-top: 20px;
+    margin-top: 0;
+    flex: none;
+  }
+  
+  @include media-query(x-large) {
+    margin-top: 0;
+    width: 250px;
+  }
+}
+
+.Logo {
+  cursor: pointer;
+  height: 60px;
+  
+  @include media-query(small) {
+    height: 80px;
+  }
+}

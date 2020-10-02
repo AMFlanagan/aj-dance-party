@@ -1,0 +1,18 @@
+@import "constants/scss/includes.scss";
+
+.PageContainer {
+  @include media-query(medium) {
+    flex: 1 1 auto;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+  }
+}
+
+.Container {
+  @include media-query(medium) {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+}

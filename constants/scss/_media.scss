@@ -1,0 +1,31 @@
+@mixin media-query($media-query) {
+    @if $media-query == x-small {
+      @media only screen and (min-width: $x-small) {
+        @content;
+      }
+    }
+    @if $media-query == small {
+      @media only screen and (min-width: $small) {
+        @content;
+      }
+    }
+    @if $media-query == medium {
+      @media only screen and (min-width: $medium) {
+        @content;
+      }
+    }
+    @if $media-query == large {
+      @media only screen and (min-width: $large) {
+        @content;
+      }
+    }
+    @if $media-query == x-large {
+      @media only screen and (min-width: $x-large) {
+        @content;
+      }
+    } @else {
+      @media only screen and (min-width: $media-query) {
+        @content;
+      }
+    }
+  }

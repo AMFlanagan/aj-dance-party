@@ -1,0 +1,63 @@
+@import "constants/scss/includes.scss";
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $AjRegular;
+  margin: 0 !important;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $color-backgroundLight;
+  font-weight: 400;
+  color: white;
+}
+
+html,
+body {
+  &[overlay="true"] {
+    touch-action: none;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
+    overflow: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.simplebar-placeholder {
+  display: none;
+}
+
+.simplebar-vertical {
+  right: 1px;
+}
+
+.simplebar-scrollbar {
+  &:before {
+    background: black;
+  }
+
+  &.simplebar-visible:before {
+    opacity: 0.6;
+  }
+}
