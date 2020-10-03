@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>AJ's Dance Party</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="shortcut icon" href="/favicon.ico?=v1" type="image/x-icon" />
+        <link rel="shortcut icon" href="/aj-logo.png" type="image/x-icon" />
       </Head>
       <Div100vh className={styles.Container}>
         <Header />
@@ -20,6 +20,7 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </div>
       </Div100vh>
+      {/* Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> */}
     </React.Fragment>
   );
 }

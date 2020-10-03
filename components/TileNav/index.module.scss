@@ -1,0 +1,15 @@
+@import "constants/scss/includes.scss";
+    
+.TileNav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; 
+  align-items: center;
+  align-content: center;
+  overflow: auto;
+  
+  @include media-query(large) {
+    flex-direction: row;
+  }
+}

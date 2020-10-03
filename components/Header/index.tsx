@@ -1,7 +1,7 @@
 import * as React from "react";
-// import Account from "components/Account";
 import Logo from "../Logo";
 import Nav from "../Nav";
+import Social from "../Social";
 
 import styles from "./index.module.scss";
 
@@ -10,6 +10,7 @@ export default () => {
     <div className={styles.Header}>
       <Logo />
       <Nav />
+      <Social />
     </div>
   );
 };

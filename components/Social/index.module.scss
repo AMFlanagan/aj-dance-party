@@ -1,0 +1,42 @@
+@import "constants/scss/includes.scss";
+
+.Social {
+  margin: 0;
+  display: flex;
+  order: 3;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  padding: 0 5px;
+  font-size: 16px;
+
+  span {
+    display: none;
+  }
+
+  @include media-query(large) {
+    width: 250px;
+    padding: 0 10px;
+    position: relative;
+  }
+}
+
+.SocialIcon {
+  height: 30px;
+  width: 30px;
+  margin: 0 10px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+  @include media-query(small) {
+    height: 30px;
+    width: 30px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

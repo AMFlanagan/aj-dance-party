@@ -1,8 +1,10 @@
-import Head from 'next/head'
-import Hero from '../components/Hero';
+import MainContainer from '../components/MainContainer';
+import TileNav from '../components/TileNav'
 
 export default () => {
   return (
-      <Hero />
+    <MainContainer fullWidth >
+      <TileNav />
+    </MainContainer>
   );
 }

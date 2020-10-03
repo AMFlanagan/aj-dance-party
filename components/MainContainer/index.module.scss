@@ -1,0 +1,28 @@
+@import "constants/scss/includes.scss";
+
+.Content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 15px;
+  min-height: 500px;
+}
+
+.Banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid $color-border;
+  background: rgba($color: #000000, $alpha: 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 98;
+}
+
+.fullWidth {
+  max-width: initial;
+}
+
+.noPadding {
+  padding: 0;
+}
